@@ -1,5 +1,6 @@
 <?php
-class ProductController
+require "BaseController.php";
+class ProductController extends BaseController
 {
     public function products(): void
     {
@@ -9,5 +10,10 @@ class ProductController
     public function productsList(): void
     {
         require "View/productsList.php";
+    }
+
+    public function view(): void
+    {
+        require "View/products.php";
     }
 }

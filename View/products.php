@@ -15,6 +15,6 @@ var_dump($_GET);
         <label for="">For Index Page</label>
         <input type="submit" value="Click Here">
     </form>
-
+    
 </body>
 </html>

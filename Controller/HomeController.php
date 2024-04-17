@@ -1,6 +1,7 @@
 <?php
+require "BaseController.php";
 
-class HomeController
+class HomeController extends BaseController
 {
     public function index(): void
     {
@@ -9,5 +10,8 @@ class HomeController
     public function home(): void
     {
         require "View/home.php";
+    }
+    public function view (): void {
+        require "View/index.php";
     }
 }
