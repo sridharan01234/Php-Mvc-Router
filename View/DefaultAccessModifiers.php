@@ -1,18 +1,27 @@
 <?php
-
-class DefaultAccessModifiers {
-     function __construct() {
-        echo"Hii from default function<br>";
+class DefaultAccessModifiers
+{
+    public function __construct()
+    {
+        echo "Hii from default function<br>";
     }
 
-    function sayHello() {
+    /**
+     * Just prints Hi user
+     * 
+     * @return void
+     */
+    public function sayHello(): void
+    {
         echo "Hi user<br>";
     }
 
 }
 
-class DefaultAccessModifiersSub extends DefaultAccessModifiers {
-    function __construct() {
+class DefaultAccessModifiersSub extends DefaultAccessModifiers
+{
+    public function __construct()
+    {
         parent::__construct();
     }
 }
