@@ -21,7 +21,7 @@ $router->add('/Serialize', array('Controller' => 'SerializeController', 'action'
 $router->add('/FinalKeyword', array('Controller' => 'FinalKeywordController', 'action' => 'view'));
 $router->add('/ClassConstant', array('Controller' => 'ClassConstantController', 'action' => 'view'));
 $router->add('/Interface', array('Controller' => 'InterfaceController', 'action' => 'view'));
-
+$router->add('/Namespace', array('Controller' => 'NamespaceController', 'action' => 'view'));
 
 $param = $router->searchPath($path);
 if (!$param) {
