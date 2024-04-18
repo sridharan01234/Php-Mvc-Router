@@ -1,8 +1,10 @@
 <?php
-class ClassConstant {
+class ClassConstant
+{
     const Constant = "Sridharan<br>";
 
-    public function __construct() {
+    public function __construct()
+    {
         echo self::Constant;
     }
 }
