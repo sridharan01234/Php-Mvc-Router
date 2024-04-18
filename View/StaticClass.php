@@ -23,8 +23,7 @@ $class->staticCheck();
 
 try {
     $class->variable = "Changing Static variable";
-}
-catch (Exception $e) {
+} catch (Exception $e) {
     echo $e->getMessage();
 }
 
