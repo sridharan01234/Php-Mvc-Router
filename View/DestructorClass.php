@@ -1,11 +1,14 @@
 <?php
 
-class DestructorClass {
-    public function __construct() {
+class DestructorClass
+{
+    public function __construct()
+    {
         echo "Hi Iam from constructor<br>";
     }
 
-    public function __destruct() {
+    public function __destruct()
+    {
         echo "Hi I am Destroyed";
     }
 }
