@@ -1,5 +1,5 @@
 <?php
-
+Namespace Connection;
 class Database
 {
     private $host = 'localhost';
