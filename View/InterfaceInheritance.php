@@ -1,20 +1,22 @@
 <?php
 require "./Interface/InheritedInterface.php";
 
-class InterfaceInheritance implements InheritedInterface {
-    public function displayName() {
+class InterfaceInheritance implements InheritedInterface
+{
+    public function displayName()
+    {
         echo "This is from UserInteface";
-        echo"<br>";
+        echo "<br>";
         echo "Hii Sridharan";
-        echo"<br>";
+        echo "<br>";
     }
-    public function displayCollege() {
+    public function displayCollege()
+    {
         echo "This is from Inherited Interface";
-        echo"<br>";
+        echo "<br>";
         echo "Bannari Amman Institute of technology";
-        echo"<br>";
+        echo "<br>";
     }
 }
 
 echo "Interface class";
-

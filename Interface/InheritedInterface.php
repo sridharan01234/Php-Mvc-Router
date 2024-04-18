@@ -1,5 +1,6 @@
 <?php
 require "./UserInterface.php";
-Interface InheritedInterface extends UserInterface{
+interface InheritedInterface extends UserInterface
+{
     public function displayCollege();
 }

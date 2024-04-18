@@ -1,5 +1,5 @@
 <?php
-
-interface UserInterface {
+interface UserInterface
+{
     public function displayName();
 }
