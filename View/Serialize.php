@@ -9,8 +9,12 @@ class Serialize
     {
         $this->db = new Database();
     }
-
-    public function serializeUser()
+    /**
+     * Collects data of user with admin role from db and serialize that object
+     * 
+     * @return object
+     */
+    public function serializeUser(): object
     {
         $this->db->query('SELECT * FROM user WHERE role = :admin');
         $this->db->bind(':admin', "user");
@@ -18,6 +22,13 @@ class Serialize
         $row = serialize($row);
         return $row;
     }
+
+    /**
+     * Unserialize object and return that object
+     * 
+     * @return object
+     * @param object $row
+     */
     public function unserializeUser($row)
     {
         return unserialize($row);
