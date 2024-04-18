@@ -1,6 +1,8 @@
 <?php
 require "./Config/Database.php";
 
+use Connection\Database as Database;
+
 class Serialize
 {
     private $db;
