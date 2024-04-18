@@ -3,14 +3,24 @@ require "./Interface/InheritedInterface.php";
 
 class InterfaceInheritance implements InheritedInterface
 {
-    public function displayName()
+    /**
+     * Displays name
+     * 
+     * @return void
+     */
+    public function displayName(): void
     {
         echo "This is from UserInteface";
         echo "<br>";
         echo "Hii Sridharan";
         echo "<br>";
     }
-    public function displayCollege()
+        /**
+     * Displays college name
+     * 
+     * @return void
+     */
+    public function displayCollege(): void
     {
         echo "This is from Inherited Interface";
         echo "<br>";
